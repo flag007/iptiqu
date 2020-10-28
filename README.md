@@ -2,7 +2,7 @@
 用法:
 
 ```
-for i in $(cat ssl-alive.in); do tls-scan -c $i --port=443,8443 --concurrency=150 --cacert=/root/db/ca-bundle.crt 2>/dev/null -o $i.json; done
+for i in $(cat ssl-alive.in); do tls-scan -c $i --port=443,8443 --cacert=/root/db/ca-bundle.crt 2>/dev/null -o $i.json; done
 ```
 
 ```
