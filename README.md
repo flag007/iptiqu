@@ -7,7 +7,7 @@ for i in $(cat ssl-alive.in); do tls-scan -c $i --port=443,8443 --cacert=/root/d
 
 ```
 获取ip
-▶ for i in $(cat ssl-alive.in); do cat root.txt | iptiqu 1.json | tee -a ips.2;done
+▶ for i in $(cat ssl-alive.in); do cat root.txt | iptiqu 1.json | tee -a tls-scan-filtered.txt;done
 ```
 
 安装:
